@@ -13,7 +13,7 @@ let estadosVitoria = [
     [2, 4, 6]
 ]
 
-/*função que verifica se alguém ganhou e se sim impede de adiciona mais simbolos, também
+/*função que verifica se alguém ganhou, se sim impede de adiciona mais simbolos, também
 adiciona os símbolos aos campos e determina o próximo jogador */
 function move(posicao){
 
@@ -40,7 +40,7 @@ function move(posicao){
     return fimJogo;
 }
 
-/*funcão que retorna true para a váriavel fimJogo se houver alguém ganhado
+/*funcão que retorna true para a váriavel fimJogo se alguém houver ganhado,
 para saber se há hum vencedor ela verifica se há alguma sequência igual a variável estadosVitoria */
 function vencedor(){
     for(let i = 0; i < estadosVitoria.length; i++){
@@ -61,7 +61,7 @@ function vencedor(){
     return false;
 }
 
-//função de reseta o jogo limpa os campos e começa pelo promeiro jogador
+//função de reseta o jogo, limpa os campos e começa pelo primeiro jogador
 function reset(){
     tabuleiro = ["","","","","","","","",""];
     jogadorVez = 0;
